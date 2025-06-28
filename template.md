@@ -19,11 +19,17 @@ https://portal.orangevps.com/store/vps-budget
 
 - [Package Information](#package-information)
 - [Table of Content](#table-of-content)
+  - [CPU Info](#cpu-info)
   - [YABS Benchmark](#yabs-benchmark)
   - [Bench.Monster Benchmark](#benchmonster-benchmark)
   - [Bench.sh Benchmark](#benchsh-benchmark)
   - [CPU Steal](#cpu-steal)
 
+## CPU Info
+
+```bash
+
+```
 
 ## YABS Benchmark
 

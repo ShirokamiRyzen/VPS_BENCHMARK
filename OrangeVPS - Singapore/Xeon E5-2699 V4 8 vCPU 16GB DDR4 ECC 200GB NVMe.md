@@ -19,10 +19,63 @@ https://portal.orangevps.com/store/vps-budget
 
 - [Package Information](#package-information)
 - [Table of Content](#table-of-content)
+  - [CPU Info](#cpu-info)
   - [YABS Benchmark](#yabs-benchmark)
   - [Bench.Monster Benchmark](#benchmonster-benchmark)
   - [Bench.sh Benchmark](#benchsh-benchmark)
   - [CPU Steal](#cpu-steal)
+
+## CPU Info
+
+```bash
+root@ryzumi:~# lscpu
+Architecture:            x86_64
+  CPU op-mode(s):        32-bit, 64-bit
+  Address sizes:         46 bits physical, 48 bits virtual
+  Byte Order:            Little Endian
+CPU(s):                  8
+  On-line CPU(s) list:   0-7
+Vendor ID:               GenuineIntel
+  BIOS Vendor ID:        Red Hat
+  Model name:            Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz
+    BIOS Model name:     RHEL 7.6.0 PC (i440FX + PIIX, 1996)  CPU @ 2.0GHz
+    BIOS CPU family:     1
+    CPU family:          6
+    Model:               79
+    Thread(s) per core:  1
+    Core(s) per socket:  1
+    Socket(s):           8
+    Stepping:            1
+    BogoMIPS:            4399.99
+    Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xt
+                         opology cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm ab
+                         m 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rt
+                         m rdseed adx smap xsaveopt arat umip md_clear flush_l1d arch_capabilities
+Virtualization features:
+  Virtualization:        VT-x
+  Hypervisor vendor:     KVM
+  Virtualization type:   full
+Caches (sum of all):
+  L1d:                   256 KiB (8 instances)
+  L1i:                   256 KiB (8 instances)
+  L2:                    32 MiB (8 instances)
+  L3:                    128 MiB (8 instances)
+NUMA:
+  NUMA node(s):          1
+  NUMA node0 CPU(s):     0-7
+Vulnerabilities:
+  Itlb multihit:         Not affected
+  L1tf:                  Mitigation; PTE Inversion; VMX flush not necessary, SMT disabled
+  Mds:                   Mitigation; Clear CPU buffers; SMT Host state unknown
+  Meltdown:              Mitigation; PTI
+  Mmio stale data:       Mitigation; Clear CPU buffers; SMT Host state unknown
+  Retbleed:              Not affected
+  Spec store bypass:     Mitigation; Speculative Store Bypass disabled via prctl
+  Spectre v1:            Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+  Spectre v2:            Mitigation; Retpolines, IBPB conditional, IBRS_FW, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected
+  Srbds:                 Not affected
+  Tsx async abort:       Mitigation; Clear CPU buffers; SMT Host state unknown
+```
 
 ## YABS Benchmark
 
