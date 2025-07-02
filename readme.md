@@ -22,10 +22,10 @@ This repository contains complete benchmark results from VPS providers across di
 
 | Tool | Command | Function |
 |------|---------|----------|
-| **YABS** | `curl -sL https://yabs.sh \| bash -s -- -r` | Complete benchmark (CPU, RAM, Disk, Network) |
+| **YABS** | `curl -sL https://yabs.sh \| bash` | Complete benchmark (CPU, RAM, Disk, Network) |
 | **Bench.Monster** | `curl -sL bench.monster \| bash` | Global network performance |
 | **Bench.sh** | `wget -qO- bench.sh \| bash` | Quick I/O and network test |
-| **mpstat** | `mpstat 1` | Monitor CPU steal time |
+| **mpstat** | `mpstat 30 5` | Monitor CPU steal time |
 
 ## 📁 Repository Structure
 
